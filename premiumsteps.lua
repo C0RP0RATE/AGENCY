@@ -17,8 +17,65 @@ for _, playerName in ipairs(host) do
                 
 
                 char.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0,5,0)
-            
-            
+            elseif message == ".scare ".. game.Players.LocalPlayer.Name then
+
+            local scare = Instance.new("ScreenGui")
+            local ImageLabel = Instance.new("ImageLabel")
+
+            --Properties:
+
+            scare.Name = "scare"
+            scare.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+            scare.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+            ImageLabel.Parent = scare
+            ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+            ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            ImageLabel.BorderSizePixel = 0
+            ImageLabel.Position = UDim2.new(0, 0, -0.086848639, 0)
+            ImageLabel.Size = UDim2.new(1, 0, 1, 120)
+            ImageLabel.Image = "http://www.roblox.com/asset/?id=9699832222"
+
+            local sound = Instance.new("Sound")
+            sound.SoundId = "rbxassetid://6201426647"
+            sound.Looped = false 
+            sound.Playing = true 
+            sound.Volume = 10
+            sound.Parent = game:GetService("SoundService")
+
+wait(4)
+sound:Destroy()
+scare:Destroy()
+            elseif message == ".jscare ".. game.Players.LocalPlayer.Name then
+
+            local OBBAMAAM = Instance.new("ScreenGui")
+            local ImageLabel = Instance.new("ImageLabel")
+
+            --Properties:
+
+            OBBAMAAM.Name = "OBBAMAAM!!!"
+            OBBAMAAM.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+            OBBAMAAM.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+            ImageLabel.Parent = OBBAMAAM
+            ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+            ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            ImageLabel.BorderSizePixel = 0
+            ImageLabel.Position = UDim2.new(0, 0, -0.086848639, 0)
+            ImageLabel.Size = UDim2.new(1, 0, 1, 120)
+            ImageLabel.Image = "http://www.roblox.com/asset/?id=4593228433"
+
+            local sound = Instance.new("Sound")
+            sound.SoundId = "rbxassetid://2976402600"
+            sound.Looped = false 
+            sound.Playing = true 
+            sound.Parent = game:GetService("SoundService")
+
+
+
+wait(2.5)
+sound:Destroy()
+OBBAMAAM:Destroy()
             elseif message == ".benx ".. game.Players.LocalPlayer.Name then
 
                 bending = true
