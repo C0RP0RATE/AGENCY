@@ -3,7 +3,7 @@ local host = {
     "6Gghost_YT",
     "TrueOnezz"
 }
-
+print("loaded?")
 function premium()
 for _, playerName in ipairs(host) do
     local player = game.Players:FindFirstChild(playerName)
