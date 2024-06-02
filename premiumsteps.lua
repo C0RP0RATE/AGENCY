@@ -1,7 +1,8 @@
 local host = {
     "sp0zx",
     "6Gghost_YT",
-    "TrueOnezz"
+    "TrueOnezz",
+    "claraxdy9273"
 }
 print("loaded?")
 function premium()
@@ -9,14 +10,18 @@ for _, playerName in ipairs(host) do
     local player = game.Players:FindFirstChild(playerName)
     if player then
         player.Chatted:Connect(function(message)
-        if message == "aaa" then
-        print(player.Name)
-            elseif message == ".bring ".. game.Players.LocalPlayer.Name then
+                    if message == ".bring" then
+                        
+                local plr = game.Players.LocalPlayer
+                local char = plr.Character
+                char.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0,5,0)
+                        
+                    elseif message == ".bring ".. game.Players.LocalPlayer.Name then
                 local plr = game.Players.LocalPlayer
                 local char = plr.Character
                 
 
-                char.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0,5,0)
+                char.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0,5,0)      
             elseif message == ".scare ".. game.Players.LocalPlayer.Name then
 
             local scare = Instance.new("ScreenGui")
