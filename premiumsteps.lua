@@ -2,7 +2,8 @@ local host = {
     "Real_Citizens",
     "sp0zx",
     "TheForLeafs",
-    "6Gghost_YT"
+    "6Gghost_YT",
+    "Graham41245"
 }
 print("loaded?")
 function premium()
