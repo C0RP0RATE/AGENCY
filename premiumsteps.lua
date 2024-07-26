@@ -1,3 +1,5 @@
+print("Hello World!")
+
 local whitelisted = "TheForLeafs"
 local player = game:GetService("Players")
 
